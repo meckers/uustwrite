@@ -1,4 +1,4 @@
-require([], function() {
+require(['lib/events'], function(Events) {
 
 	var documentController = {
 		
@@ -10,12 +10,12 @@ require([], function() {
 		},
 		
 		wysiwygify: function() {
-			$('.article.edit').wysiwyg({
-				classes: '',
-				toolbar: 'top'
-			});
-		}
-		
+			tinymce.init({
+			    selector: "textarea.article.edit",
+			    plugins: "autoresize link video",
+			    toolbar: "undo redo | styleselect | bold italic | link"
+		 	});
+		}		
 		
 	};
 	

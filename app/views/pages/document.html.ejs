@@ -3,11 +3,11 @@
   <head>
     <title></title>
     <link rel="stylesheet" href="/stylesheets/screen.css" />   
+    <!--link rel="stylesheet" href="/stylesheets/jquery.wysiwyg.css" /-->   
     <% include scripts.html.ejs %>
-    <script data-main="/scripts/controller/document.js" src="/scripts/lib/require.js"></script>
-    <% include require-config.html.ejs %>
+    <script data-main="/scripts/main.js" src="/scripts/lib/require.js"></script>      
   </head>
   <body>    
-    <div class="article edit"></div>
-  </body>
+    <textarea class="article edit"></textarea>
+  </body>  
 </html>

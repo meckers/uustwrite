@@ -1,8 +1,13 @@
-require(['core/application'], function(Application) {
+require.config({
+    paths: {
+        'baseUrl': '/public/scripts'
+    },
+    "packages": [
+    ]
+});
 
-    /**
-     * Initiate the awesomeness!
-     */
-    Application.init();
+require(['controller/page-decider'], function(Decider) {
+
+    Decider.init();
 
 });

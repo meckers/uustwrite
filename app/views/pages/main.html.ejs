@@ -3,11 +3,9 @@
   <head>
     <title><%= title %></title>
     <link rel="stylesheet" href="/stylesheets/screen.css" />
-    <script src="/scripts/lib/require.js"></script>
-    <script src="/scripts/lib/jquery-2.1.4.min.js"></script>
-    <script src="/scripts/lib/package.js"></script>    
-    <script src="/scripts/lib/simple-javascript-inheritance.js"></script>
-    <script src="/scripts/lib/wysiwyg-editor.min.js"></script>
+    <% include scripts.html.ejs %>
+    <script data-main="/scripts/page/landing-page.js" src="/scripts/lib/require.js"></script>
+    <% include require-config.html.ejs %>  
   </head>
   <body>    
   </body>
